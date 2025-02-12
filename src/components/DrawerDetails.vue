@@ -14,7 +14,8 @@
       </div>
 
       <div class="carousel-container q-mb-md">
-        <HotelImagesCarousel :images="hotel.images" :height="$q.screen.lt.md ? '256px' : '420px'" :arrows="true" />
+        <HotelImagesCarousel :images="hotel.images" :height="$q.screen.lt.md ? '256px' : '420px'" :arrows="true"
+          :show-counter="true" />
       </div>
 
       <template v-if="hotel.amenities?.length">

@@ -1,7 +1,7 @@
 <template>
   <div class="row items-center text-grey-8">
     <span class="text-body2">Organizar por</span>
-    <q-btn-dropdown flat dense no-caps :label="selectedOption?.label" class="q-ml-sm text-primary text-weight-medium">
+    <q-btn-dropdown flat dense no-caps :label="selectedOption?.label" class="text-primary text-weight-medium">
       <q-list>
         <q-item v-for="option in sortOptions" :key="option.value" clickable v-close-popup @click="handleSelect(option)">
           <q-item-section>

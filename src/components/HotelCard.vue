@@ -8,7 +8,7 @@
       <div class="col-12 col-md-5">
         <q-card-section>
           <h2 class="text-h5 q-ma-none text-grey-9">{{ hotel.name }}</h2>
-          <h3 class="text-subtitle1 text-grey-6 q-ma-none">{{ hotel.address.fullAddress }}</h3>
+          <h3 class="text-subtitle1 text-grey-6 q-ma-none text-weight-regular">{{ hotel.address.fullAddress }}</h3>
 
           <div class="row items-center q-gutter-x-md q-mt-md">
             <HotelRating :stars="hotel.stars" :has-amenities="Boolean(hotel.amenities?.length)" />
@@ -17,7 +17,7 @@
 
           <div class="q-mt-md">
             <q-chip :label="hotel.hasRefundableRoom ? 'Reembolsável' : 'Não Reembolsável'" color="grey-6"
-              text-color="grey-1" dense class="no-shadow rounded-borders q-pa-md" />
+              text-color="grey-1" dense class="no-shadow rounded-borders q-pa-md" readonly />
           </div>
         </q-card-section>
       </div>
@@ -25,12 +25,12 @@
       <div class="col-12 col-md-3 price-section">
         <q-card-section class="column full-height">
           <div class="col-auto q-mb-md q-mb-md-none">
-            <p class="text-caption q-ma-none">A partir de</p>
+            <p class="text-caption q-ma-none text-weight-regular text-grey-6">A partir de</p>
             <p class="text-caption q-mb-sm">
               R$
               <span class="text-h5">{{ formatCurrency(hotel.price) }}</span>
             </p>
-            <p class="text-caption q-ma-none">Impostos inclusos</p>
+            <p class="text-caption q-ma-none text-weight-regular text-grey-6">Impostos inclusos</p>
           </div>
 
           <div class="col full-width flex justify-start items-start">

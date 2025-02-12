@@ -28,7 +28,7 @@
       </q-infinite-scroll>
 
       <div class="row justify-center" v-if="!hasNextPage && hotels.length">
-        <p class="text-grey-6 text-subtitle2 text-weight-regular">Não há mais hotéis para carregar</p>
+        <p class="text-grey-6 text-subtitle2 text-weight-regular">Não existem mais hotéis para serem exibidos :(</p>
       </div>
     </template>
   </div>
