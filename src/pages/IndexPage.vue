@@ -3,6 +3,12 @@
     <div class="container-wrapper">
       <div class="row q-col-gutter-md justify-center">
         <div :class="containerClass">
+          <HotelFilterForm class="q-mb-md" />
+
+          <div class="q-mb-md row justify-end">
+            <HotelSortSelect />
+          </div>
+
           <div class="column q-gutter-y-md">
             <template v-if="loading">
               <q-skeleton v-for="n in 3" :key="`${n}-skeleton`" class="hotel-card-skeleton" height="320px" square />
@@ -31,17 +37,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, watch, onBeforeUnmount } from 'vue'
-import { useQuasar, Loading } from 'quasar'
+import { ref, computed, watch, onBeforeUnmount } from 'vue'
+import { useQuasar } from 'quasar'
 import HotelCard from 'components/HotelCard.vue'
 import type { Hotel } from 'components/models'
 import DrawerDetails from 'components/DrawerDetails.vue'
+import HotelFilterForm from 'components/HotelFilterForm.vue'
+import HotelSortSelect from 'components/HotelSortSelect.vue'
+import { useHotels } from '../composables/useHotels'
 
 const $q = useQuasar()
 const rightDrawerOpen = ref(false)
 const selectedHotel = ref<Hotel | null>(null)
-const hotels = ref<Hotel[]>([])
-const loading = ref(true)
 const currentSlide = ref(0)
 
 const isMobile = computed(() => $q.screen.lt.md)
@@ -87,27 +94,12 @@ const closeDrawer = () => {
   selectedHotel.value = null
 }
 
-onMounted(async () => {
-  try {
-    Loading.show({
-      message: 'Carregando hotéis...'
-    })
-    const response = await fetch('/hotel.json')
-    const data = await response.json()
-    hotels.value = data[0].hotels
-  } catch (error) {
-    console.error('Error loading hotels:', error)
-    hotels.value = []
-    $q.notify({
-      message: 'Erro ao carregar hotéis',
-      color: 'negative',
-      icon: 'error'
-    })
-  } finally {
-    loading.value = false
-    Loading.hide()
-  }
-})
+const {
+  hotels,
+  isFetching: loading,
+  // hasNextPage,
+  // fetchNextPage
+} = useHotels()
 </script>
 
 <style lang="scss" scoped>
