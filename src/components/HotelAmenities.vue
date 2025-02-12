@@ -1,37 +1,34 @@
 <template>
-  <div>
-    <div v-if="!showLabels" class="row justify-start q-gutter-x-md text-grey-6">
-      <div v-for="amenity in amenities" :key="amenity.key" class="row items-center no-wrap">
-        <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
+  <div v-if="!showLabels" v-for="amenity in amenities" :key="amenity.key"
+    class="row items-center amenity-item text-grey-6">
+    <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
+  </div>
+
+  <div v-else>
+    <div class="row q-col-gutter-md">
+      <div v-for="(amenity) in visibleAmenities" :key="amenity.key" class="col-12 col-sm-6 col-md-3">
+        <div class="row items-center q-gutter-x-xs text-grey-6">
+          <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
+          <span class="q-ml-xs text-caption">{{ amenity.label }}</span>
+        </div>
       </div>
     </div>
 
-    <div v-else>
-      <div class="row q-col-gutter-md">
-        <div v-for="(amenity) in visibleAmenities" :key="amenity.key" class="col-12 col-sm-6 col-md-3">
-          <div class="row items-center q-gutter-x-xs text-grey-6">
-            <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
-            <span class="q-ml-xs text-caption">{{ amenity.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <q-slide-transition>
-        <div v-show="expanded" class="q-mt-md">
-          <div class="row q-col-gutter-md">
-            <div v-for="amenity in remainingAmenities" :key="amenity.key" class="col-12 col-sm-6 col-md-3">
-              <div class="row items-center q-gutter-x-xs text-grey-6">
-                <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
-                <span class="q-ml-xs text-caption">{{ amenity.label }}</span>
-              </div>
+    <q-slide-transition>
+      <div v-show="expanded" class="q-mt-md">
+        <div class="row q-col-gutter-md">
+          <div v-for="amenity in remainingAmenities" :key="amenity.key" class="col-12 col-sm-6 col-md-3">
+            <div class="row items-center q-gutter-x-xs text-grey-6">
+              <q-icon :name="getAmenityIcon(amenity.key)" size="xs" />
+              <span class="q-ml-xs text-caption">{{ amenity.label }}</span>
             </div>
           </div>
         </div>
-      </q-slide-transition>
-
-      <div v-if="hasMoreAmenities" class="row justify-center q-mt-md">
-        <q-btn outline color="primary" :label="expanded ? 'Ver menos' : 'Ver mais'" size="sm" @click="toggleExpand" />
       </div>
+    </q-slide-transition>
+
+    <div v-if="hasMoreAmenities" class="row justify-center q-mt-md">
+      <q-btn outline color="primary" :label="expanded ? 'Ver menos' : 'Ver mais'" size="sm" @click="toggleExpand" />
     </div>
   </div>
 </template>
@@ -90,5 +87,21 @@ const getAmenityIcon = (key: string): string => {
 <style scoped>
 .no-wrap {
   white-space: nowrap;
+}
+
+.amenities-container {
+  flex-wrap: wrap;
+}
+
+.amenity-item {
+  @media (max-width: 1023px) {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .amenities-container {
+    flex-wrap: nowrap;
+  }
 }
 </style>

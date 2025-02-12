@@ -1,21 +1,17 @@
 <template>
   <q-card class="hotel-card" flat>
-    <div class="row full-width" :class="{ 'gt-sm': !$q.screen.lt.md }">
-      <div :class="$q.screen.lt.md ? 'col-12' : 'col-4'">
+    <div class="row full-width">
+      <div class="col-12 col-md-4">
         <HotelImagesCarousel :images="hotel.images" :height="$q.screen.lt.md ? '256px' : '320px'" :arrows="true" />
       </div>
 
-      <div :class="$q.screen.lt.md ? 'col-12' : 'col-5'">
+      <div class="col-12 col-md-5">
         <q-card-section>
           <h2 class="text-h5 q-ma-none">{{ hotel.name }}</h2>
-          <h3 class="text-subtitle1 q-ma-none">{{ hotel.address.fullAddress }}</h3>
+          <h3 class="text-subtitle1 text-grey-6 q-ma-none">{{ hotel.address.fullAddress }}</h3>
 
           <div class="row items-center q-gutter-x-md q-mt-md">
-            <div class="row items-center q-gutter-x-xs">
-              <span>{{ hotel.stars }}</span>
-              <q-rating :model-value="Number(hotel.stars)" size="xs" readonly />
-            </div>
-
+            <HotelRating :stars="hotel.stars" :has-amenities="Boolean(hotel.amenities?.length)" />
             <HotelAmenities :amenities="hotel.amenities || []" />
           </div>
 
@@ -26,19 +22,20 @@
         </q-card-section>
       </div>
 
-      <div :class="$q.screen.lt.md ? 'col-12' : 'col-3'" class="price-section">
+      <div class="col-12 col-md-3 price-section">
         <q-card-section class="column full-height">
-          <div>
+          <div class="col-auto q-mb-md q-mb-md-none">
             <p class="text-caption q-ma-none">A partir de</p>
             <p class="text-caption q-mb-sm">
               R$
-              <span class="text-h5">{{ hotel.price }}</span>
+              <span class="text-h5">{{ formatCurrency(hotel.price) }}</span>
             </p>
             <p class="text-caption q-ma-none">Impostos inclusos</p>
           </div>
 
-          <q-btn :class="$q.screen.lt.md ? 'full-width q-mt-md' : 'q-mt-xl'" no-caps color="primary" label="Selecionar"
-            rounded @click="$emit('select', hotel)" />
+          <div class="col full-width flex justify-start items-start">
+            <q-btn no-caps color="primary" label="Selecionar" rounded @click="$emit('select', hotel)" />
+          </div>
         </q-card-section>
       </div>
     </div>
@@ -47,9 +44,13 @@
 
 <script setup lang="ts">
 import { useQuasar } from 'quasar';
+
 import HotelAmenities from './HotelAmenities.vue';
 import HotelImagesCarousel from './HotelImagesCarousel.vue';
+import HotelRating from './HotelRating.vue';
 import type { Hotel } from './models';
+
+import formatCurrency from '../utils/formatCurrency';
 
 const $q = useQuasar();
 
@@ -80,6 +81,20 @@ defineEmits<{
     @media (max-width: 1023px) {
       border-left: none;
       border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .q-btn::before {
+    box-shadow: none;
+  }
+
+  .q-btn {
+    width: 70%;
+    margin-top: 32px;
+
+    @media (max-width: 1023px) {
+      margin-top: 0;
+      width: 100%;
     }
   }
 }
