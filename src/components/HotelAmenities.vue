@@ -28,7 +28,8 @@
     </q-slide-transition>
 
     <div v-if="hasMoreAmenities" class="row justify-center q-mt-md">
-      <q-btn outline color="primary" :label="expanded ? 'Ver menos' : 'Ver mais'" size="sm" @click="toggleExpand" />
+      <q-btn outline color="light-blue-5" :label="expanded ? 'Ver menos' : 'Mostrar todas as facilidades'" size="sm"
+        rounded @click="toggleExpand" />
     </div>
   </div>
 </template>

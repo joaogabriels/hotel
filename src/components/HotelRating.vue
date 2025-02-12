@@ -1,7 +1,7 @@
 <template>
   <div class="row items-start q-gutter-x-xs" :class="{ 'rating-section': hasAmenities }">
     <span>{{ stars }}</span>
-    <q-rating :model-value="Number(stars)" size="xs" readonly />
+    <q-rating :model-value="Number(stars)" size="xs" readonly color="orange-4" />
   </div>
 </template>
 

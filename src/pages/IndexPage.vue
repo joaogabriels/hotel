@@ -24,11 +24,9 @@
     <div v-if="rightDrawerOpen && !isMobile" class="drawer-overlay" @click="closeDrawer" />
   </q-page>
 
-  <q-drawer v-model="rightDrawerOpen" :width="drawerWidth" side="right" bordered overlay behavior="desktop"
-    :breakpoint="0" @hide="selectedHotel = null">
-    <q-scroll-area class="fit">
-      <DrawerDetails v-if="selectedHotel" :hotel="selectedHotel" />
-    </q-scroll-area>
+  <q-drawer v-model="rightDrawerOpen" :width="drawerWidth" side="right" bordered overlay
+    :behavior="$q.screen.lt.md ? 'mobile' : 'desktop'" :breakpoint="0" @hide="selectedHotel = null" :full-height="true">
+    <DrawerDetails v-if="selectedHotel" :hotel="selectedHotel" @close="closeDrawer" />
   </q-drawer>
 </template>
 

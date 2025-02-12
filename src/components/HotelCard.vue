@@ -7,7 +7,7 @@
 
       <div class="col-12 col-md-5">
         <q-card-section>
-          <h2 class="text-h5 q-ma-none">{{ hotel.name }}</h2>
+          <h2 class="text-h5 q-ma-none text-grey-9">{{ hotel.name }}</h2>
           <h3 class="text-subtitle1 text-grey-6 q-ma-none">{{ hotel.address.fullAddress }}</h3>
 
           <div class="row items-center q-gutter-x-md q-mt-md">
