@@ -47,13 +47,15 @@ import { ref, onMounted } from 'vue';
 import type { Place } from './models';
 import filterPlaces from '../utils/filterPlaces';
 import { useQueryParams } from '../composables/useQueryParams'
+import { useRoute } from 'vue-router';
 
 const places = ref<Place[]>([]);
 const selectedPlace = ref<Place | null>(null);
 const hotelName = ref('');
 const filteredPlaces = ref<Place[]>([]);
 const hasSubmitted = ref(false);
-const { updateQueryParams, queryParams } = useQueryParams()
+const { updateQueryParams } = useQueryParams()
+const { query } = useRoute()
 
 const loadPlaces = async () => {
   try {
@@ -87,14 +89,14 @@ const onSubmit = async () => {
 onMounted(async () => {
   await loadPlaces();
 
-  if (queryParams.location) {
-    selectedPlace.value = places.value.find(place => `${place.name}, ${place.state.shortname}` === queryParams.location) || null;
+  if (query.location) {
+    selectedPlace.value = places.value.find(place => `${place.name}, ${place.state.shortname}` === query.location) || null;
 
     hasSubmitted.value = true;
   }
 
-  if (queryParams.hotelName) {
-    hotelName.value = queryParams.hotelName as string;
+  if (query.hotelName) {
+    hotelName.value = query.hotelName as string;
 
     hasSubmitted.value = true;
   }

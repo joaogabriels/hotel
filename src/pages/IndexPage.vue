@@ -9,20 +9,7 @@
             <HotelSortSelect />
           </div>
 
-          <div class="column q-gutter-y-md">
-            <template v-if="loading">
-              <q-skeleton v-for="n in 3" :key="`${n}-skeleton`" class="hotel-card-skeleton" height="320px" square />
-            </template>
-
-            <template v-else-if="hotels.length">
-              <HotelCard v-for="hotel in hotels" :key="hotel.id" :hotel="hotel" @select="openHotelDetails" />
-            </template>
-
-            <div v-else class="column items-center q-pa-xl">
-              <q-icon name="search_off" size="4rem" color="grey-6" />
-              <p class="text-h6 text-grey-6">Nenhum hotel encontrado</p>
-            </div>
-          </div>
+          <HotelList @select="openHotelDetails" />
         </div>
       </div>
     </div>
@@ -39,12 +26,11 @@
 <script setup lang="ts">
 import { ref, computed, watch, onBeforeUnmount } from 'vue'
 import { useQuasar } from 'quasar'
-import HotelCard from 'components/HotelCard.vue'
 import type { Hotel } from 'components/models'
 import DrawerDetails from 'components/DrawerDetails.vue'
 import HotelFilterForm from 'components/HotelFilterForm.vue'
 import HotelSortSelect from 'components/HotelSortSelect.vue'
-import { useHotels } from '../composables/useHotels'
+import HotelList from 'components/HotelList.vue'
 
 const $q = useQuasar()
 const rightDrawerOpen = ref(false)
@@ -93,13 +79,6 @@ const closeDrawer = () => {
   rightDrawerOpen.value = false
   selectedHotel.value = null
 }
-
-const {
-  hotels,
-  isFetching: loading,
-  // hasNextPage,
-  // fetchNextPage
-} = useHotels()
 </script>
 
 <style lang="scss" scoped>

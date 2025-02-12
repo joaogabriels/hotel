@@ -4,7 +4,6 @@ interface QueryParams {
   location?: string
   hotelName?: string
   sortBy?: string
-  page?: string
 }
 
 export function useQueryParams() {
@@ -15,7 +14,6 @@ export function useQueryParams() {
     const newQuery = {
       ...route.query,
       ...params,
-      page: params.page || '1',
     }
 
     Object.keys(newQuery).forEach((key) => {
@@ -33,6 +31,5 @@ export function useQueryParams() {
 
   return {
     updateQueryParams,
-    queryParams: route.query,
   }
 }

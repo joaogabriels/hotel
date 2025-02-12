@@ -12,7 +12,7 @@ export function useHotels() {
 
   const hasNextPage = computed(() => currentPage.value < totalPages.value)
 
-  const fetchHotels = async () => {
+  const fetchHotels = async (page: number = 1) => {
     isFetching.value = true
 
     try {
@@ -20,11 +20,16 @@ export function useHotels() {
         location: route.query.location as string,
         name: route.query.hotelName as string,
         sortBy: route.query.sortBy as 'recommended' | 'best_rated',
-        page: Number(route.query.page || 1),
+        page,
         perPage: 10,
       })
 
-      hotels.value = response.data
+      if (page === 1) {
+        hotels.value = response.data
+      } else {
+        hotels.value = [...hotels.value, ...response.data]
+      }
+
       totalPages.value = response.totalPages
       currentPage.value = response.page
     } catch (error) {
@@ -37,13 +42,20 @@ export function useHotels() {
 
   const fetchNextPage = async () => {
     if (!hasNextPage.value || isFetching.value) return
+    await fetchHotels(currentPage.value + 1)
+  }
 
-    await fetchHotels()
+  const reset = () => {
+    hotels.value = []
+    currentPage.value = 1
+    totalPages.value = 0
   }
 
   watch(
     () => route.query,
     async () => {
+      reset()
+
       await fetchHotels()
     },
     { immediate: true },
@@ -56,5 +68,6 @@ export function useHotels() {
     fetchNextPage,
     currentPage,
     totalPages,
+    reset,
   }
 }

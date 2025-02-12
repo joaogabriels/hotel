@@ -16,6 +16,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useQueryParams } from '../composables/useQueryParams';
+import { useRoute } from 'vue-router';
 
 interface SortOption {
   label: string;
@@ -28,7 +29,8 @@ const sortOptions: SortOption[] = [
 ];
 
 const selectedOption = ref(sortOptions[0]);
-const { updateQueryParams, queryParams } = useQueryParams();
+const { updateQueryParams } = useQueryParams();
+const { query } = useRoute();
 
 const handleSelect = async (option: SortOption) => {
   selectedOption.value = option;
@@ -36,8 +38,8 @@ const handleSelect = async (option: SortOption) => {
 };
 
 onMounted(() => {
-  if (queryParams.sortBy) {
-    selectedOption.value = sortOptions.find(option => option.value === queryParams.sortBy) || sortOptions[0];
+  if (query.sortBy) {
+    selectedOption.value = sortOptions.find(option => option.value === query.sortBy) || sortOptions[0];
   }
 });
 </script>
