@@ -19,7 +19,7 @@
 
   <q-drawer v-model="rightDrawerOpen" :width="drawerWidth" side="right" bordered overlay
     :behavior="$q.screen.lt.md ? 'mobile' : 'desktop'" :breakpoint="0" @hide="selectedHotel = null" :full-height="true">
-    <DrawerDetails v-if="selectedHotel" :hotel="selectedHotel" @close="closeDrawer" />
+    <HotelDrawerDetails v-if="selectedHotel" :hotel="selectedHotel" @close="closeDrawer" />
   </q-drawer>
 </template>
 
@@ -27,7 +27,7 @@
 import { ref, computed, watch, onBeforeUnmount } from 'vue'
 import { useQuasar } from 'quasar'
 import type { Hotel } from 'components/models'
-import DrawerDetails from 'components/DrawerDetails.vue'
+import HotelDrawerDetails from 'components/HotelDrawerDetails.vue'
 import HotelFilterForm from 'components/HotelFilterForm.vue'
 import HotelSortSelect from 'components/HotelSortSelect.vue'
 import HotelList from 'components/HotelList.vue'

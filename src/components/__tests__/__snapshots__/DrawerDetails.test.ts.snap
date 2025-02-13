@@ -1,14 +1,14 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`DrawerDetails > matches snapshot 1`] = `
-"<div data-v-d0e1fd2b=\\"\\" class=\\"q-scrollarea fit\\">
+exports[`HotelDrawerDetails > matches snapshot 1`] = `
+"<div data-v-69d547a9=\\"\\" class=\\"q-scrollarea fit\\">
   <div class=\\"q-scrollarea__container scroll relative-position fit hide-scrollbar\\">
     <div class=\\"q-scrollarea__content absolute\\">
       <!---->
-      <div data-v-d0e1fd2b=\\"\\" class=\\"q-pa-md\\">
-        <div data-v-d0e1fd2b=\\"\\" class=\\"row items-start justify-between q-mb-md\\">
-          <div data-v-d0e1fd2b=\\"\\" class=\\"col\\">
-            <div data-v-378063dc=\\"\\" data-v-d0e1fd2b=\\"\\" class=\\"row items-start q-gutter-x-xs\\"><span data-v-378063dc=\\"\\">5</span>
+      <div data-v-69d547a9=\\"\\" class=\\"q-pa-md\\">
+        <div data-v-69d547a9=\\"\\" class=\\"row items-start justify-between q-mb-md\\">
+          <div data-v-69d547a9=\\"\\" class=\\"col\\">
+            <div data-v-378063dc=\\"\\" data-v-69d547a9=\\"\\" class=\\"row items-start q-gutter-x-xs\\"><span data-v-378063dc=\\"\\">5</span>
               <div data-v-378063dc=\\"\\" class=\\"q-rating row inline items-center q-rating--non-editable text-orange-4 rating\\" style=\\"font-size: 18px;\\" role=\\"radiogroup\\" aria-readonly=\\"true\\">
                 <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 1\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
                 <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 2\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
@@ -17,13 +17,13 @@ exports[`DrawerDetails > matches snapshot 1`] = `
                 <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"true\\" aria-label=\\"grade 5\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
               </div>
             </div>
-            <p data-v-d0e1fd2b=\\"\\" class=\\"text-h5 q-ma-none text-grey-9 q-mt-sm\\">Hotel de Teste</p>
-            <p data-v-d0e1fd2b=\\"\\" class=\\"text-subtitle2 text-grey-6 q-ma-none text-weight-regular\\">Av. Antônio Abrahão Caram, 1001, São José, Belo Horizonte, MG, Brasil, 31275-000</p>
+            <p data-v-69d547a9=\\"\\" class=\\"text-h5 q-ma-none text-grey-9 q-mt-sm\\">Hotel de Teste</p>
+            <p data-v-69d547a9=\\"\\" class=\\"text-subtitle2 text-grey-6 q-ma-none text-weight-regular\\">Av. Antônio Abrahão Caram, 1001, São José, Belo Horizonte, MG, Brasil, 31275-000</p>
           </div>
           <!--v-if-->
         </div>
-        <div data-v-d0e1fd2b=\\"\\" class=\\"carousel-container q-mb-md\\">
-          <div data-v-f3901ebe=\\"\\" data-v-d0e1fd2b=\\"\\" class=\\"q-carousel q-panel-parent q-carousel--without-padding hotel-carousel\\" style=\\"height: 420px;\\">
+        <div data-v-69d547a9=\\"\\" class=\\"carousel-container q-mb-md\\">
+          <div data-v-f3901ebe=\\"\\" data-v-69d547a9=\\"\\" class=\\"q-carousel q-panel-parent q-carousel--without-padding hotel-carousel\\" style=\\"height: 420px;\\">
             <div class=\\"q-carousel__slides-container\\">
               <transition-stub appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
                 <div class=\\"q-panel scroll\\" style=\\"--q-transition-duration: 300ms;\\" role=\\"tabpanel\\">
@@ -38,9 +38,9 @@ exports[`DrawerDetails > matches snapshot 1`] = `
             </div>
           </div>
         </div>
-        <div data-v-d0e1fd2b=\\"\\" class=\\"drawer-section-title q-mb-md\\">Facilidades do hotel</div>
-        <div data-v-d0e1fd2b=\\"\\" class=\\"amenities-section q-mb-md\\">
-          <div data-v-accd225c=\\"\\" data-v-d0e1fd2b=\\"\\">
+        <div data-v-69d547a9=\\"\\" class=\\"drawer-section-title q-mb-md\\">Facilidades do hotel</div>
+        <div data-v-69d547a9=\\"\\" class=\\"amenities-section q-mb-md\\">
+          <div data-v-accd225c=\\"\\" data-v-69d547a9=\\"\\">
             <div data-v-accd225c=\\"\\" class=\\"row q-col-gutter-md\\">
               <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
                 <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">help_outline</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Wi-Fi</span></div>
@@ -79,8 +79,8 @@ exports[`DrawerDetails > matches snapshot 1`] = `
             <div data-v-accd225c=\\"\\" class=\\"row justify-center q-mt-md\\"><button data-v-accd225c=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle q-btn--rounded text-light-blue-5 q-btn--actionable q-focusable q-hoverable\\" style=\\"font-size: 10px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><span class=\\"block\\">Mostrar todas as facilidades</span></span></button></div>
           </div>
         </div>
-        <div data-v-d0e1fd2b=\\"\\" class=\\"drawer-section-title q-mb-md\\">Conheça um pouco mais</div>
-        <div data-v-d0e1fd2b=\\"\\" class=\\"text-grey-6\\">Hotel de Teste Description</div>
+        <div data-v-69d547a9=\\"\\" class=\\"drawer-section-title q-mb-md\\">Conheça um pouco mais</div>
+        <div data-v-69d547a9=\\"\\" class=\\"text-grey-6\\">Hotel de Teste Description</div>
       </div>
     </div>
     <!---->

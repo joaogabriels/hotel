@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelFilterForm > matches snapshot 1`] = `"<q-card-stub data-v-447b4aad=\\"\\" tag=\\"div\\" square=\\"false\\" flat=\\"true\\" bordered=\\"false\\" class=\\"form-card\\"></q-card-stub>"`;

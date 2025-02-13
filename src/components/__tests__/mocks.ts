@@ -73,6 +73,24 @@ export const mockHotel: Hotel = {
   price: 0,
 }
 
+export const mockSaoPauloHotel: Hotel = {
+  ...mockHotel,
+  id: 2,
+  name: 'Hotel de Teste 2',
+  stars: '4',
+  thumb: 'https://fakeimg.pl/600x400',
+  address: {
+    city: 'São Paulo',
+    state: 'SP',
+    country: 'Brasil',
+    zipCode: '30123-456',
+    fullAddress: 'Rua Teste, 123, Bairro Teste, São Paulo, SP, Brasil, 30123-456',
+    street: 'Rua Teste',
+    number: '123',
+    district: 'Bairro Teste',
+  },
+}
+
 export const mockPlace: Place = {
   name: 'Belo Horizonte',
   state: {

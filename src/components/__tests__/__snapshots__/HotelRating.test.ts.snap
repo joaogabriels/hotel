@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelRating > matches snapshot 1`] = `
+"<div data-v-378063dc=\\"\\" class=\\"row items-start q-gutter-x-xs\\"><span data-v-378063dc=\\"\\">5</span>
+  <div data-v-378063dc=\\"\\" class=\\"q-rating row inline items-center q-rating--non-editable text-orange-4 rating\\" style=\\"font-size: 18px;\\" role=\\"radiogroup\\" aria-readonly=\\"true\\">
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 1\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 2\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 3\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 4\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"true\\" aria-label=\\"grade 5\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+  </div>
+</div>"
+`;
+
+exports[`HotelRating > matches snapshot with amenities 1`] = `
+"<div data-v-378063dc=\\"\\" class=\\"row items-start q-gutter-x-xs rating-section\\"><span data-v-378063dc=\\"\\">5</span>
+  <div data-v-378063dc=\\"\\" class=\\"q-rating row inline items-center q-rating--non-editable text-orange-4 rating\\" style=\\"font-size: 18px;\\" role=\\"radiogroup\\" aria-readonly=\\"true\\">
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 1\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 2\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 3\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 4\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+    <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"true\\" aria-label=\\"grade 5\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+  </div>
+</div>"
+`;

@@ -42,4 +42,6 @@ onMounted(() => {
     selectedOption.value = sortOptions.find(option => option.value === query.sortBy) || sortOptions[0];
   }
 });
+
+defineExpose({ handleSelect })
 </script>

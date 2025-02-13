@@ -55,8 +55,11 @@ export function useHotels() {
     () => route.query,
     async () => {
       reset()
-
-      await fetchHotels()
+      try {
+        await fetchHotels()
+      } catch (error) {
+        console.error('Error in watcher:', error)
+      }
     },
     { immediate: true },
   )

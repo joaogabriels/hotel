@@ -34,7 +34,9 @@
           <q-input v-model="hotelName" borderless dense class="input-field" />
         </div>
 
-        <div class="flex justify-end q-mt-md">
+        <div class="flex justify-end q-mt-md q-gutter-x-md">
+          <q-btn v-if="hasSubmitted" label="Limpar busca" color="negative" rounded no-caps @click="clearSearch" />
+
           <q-btn :label="hasSubmitted ? 'Alterar busca' : 'Buscar'" type="submit" color="primary" rounded no-caps />
         </div>
       </div>
@@ -75,6 +77,17 @@ const onSubmit = async () => {
   await updateQueryParams({
     location: selectedPlace.value ? `${selectedPlace.value.name}, ${selectedPlace.value.state.shortname}` : '',
     hotelName: hotelName.value || ''
+  });
+};
+
+const clearSearch = async () => {
+  selectedPlace.value = null;
+  hotelName.value = '';
+  hasSubmitted.value = false;
+
+  await updateQueryParams({
+    location: '',
+    hotelName: ''
   });
 };
 
