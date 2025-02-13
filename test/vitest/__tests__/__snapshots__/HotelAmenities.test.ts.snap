@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelAmenities > matches snapshot 1`] = `
+"<div data-v-accd225c=\\"\\">
+  <div data-v-accd225c=\\"\\" class=\\"row q-col-gutter-md\\">
+    <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+      <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">help_outline</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Wi-Fi</span></div>
+    </div>
+    <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+      <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">restaurant_menu</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Café da manhã</span></div>
+    </div>
+    <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+      <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">store</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Loja de presentes</span></div>
+    </div>
+    <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+      <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">hot_tub</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Jacuzzi</span></div>
+    </div>
+  </div>
+  <transition-stub data-v-accd225c=\\"\\" appear=\\"false\\" persisted=\\"false\\" css=\\"false\\">
+    <div data-v-accd225c=\\"\\" class=\\"q-mt-md\\" style=\\"display: none;\\">
+      <div data-v-accd225c=\\"\\" class=\\"row q-col-gutter-md\\">
+        <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+          <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">medical_services</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Serviço médico</span></div>
+        </div>
+        <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+          <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">local_library</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Biblioteca</span></div>
+        </div>
+        <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+          <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">golf_course</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Campo de golfe</span></div>
+        </div>
+        <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+          <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">surfing</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Esportes aquáticos</span></div>
+        </div>
+        <div data-v-accd225c=\\"\\" class=\\"col-12 col-sm-6 col-md-3\\">
+          <div data-v-accd225c=\\"\\" class=\\"row items-center q-gutter-x-xs text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">child_care</i><span data-v-accd225c=\\"\\" class=\\"q-ml-xs text-caption\\">Clube de crianças</span></div>
+        </div>
+      </div>
+    </div>
+  </transition-stub>
+  <div data-v-accd225c=\\"\\" class=\\"row justify-center q-mt-md\\"><button data-v-accd225c=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--outline q-btn--rectangle q-btn--rounded text-light-blue-5 q-btn--actionable q-focusable q-hoverable\\" style=\\"font-size: 10px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><span class=\\"block\\">Mostrar todas as facilidades</span></span></button></div>
+</div>"
+`;
+
+exports[`HotelAmenities > matches snapshot when showLabels is false 1`] = `
+"<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">help_outline</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">restaurant_menu</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">store</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">hot_tub</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">medical_services</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">local_library</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">golf_course</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">surfing</i></div>
+<div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">child_care</i></div>"
+`;

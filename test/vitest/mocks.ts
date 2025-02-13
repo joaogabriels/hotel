@@ -63,7 +63,11 @@ export const mockHotel: Hotel = {
     zipCode: '31275-000',
     fullAddress: 'Av. Antônio Abrahão Caram, 1001, São José, Belo Horizonte, MG, Brasil, 31275-000',
   },
-  images: [],
+  images: [
+    'https://fakeimg.pl/600x400',
+    'https://fakeimg.pl/600x400',
+    'https://fakeimg.pl/600x400',
+  ],
   deals: null,
   roomsQuantity: 0,
   price: 0,
