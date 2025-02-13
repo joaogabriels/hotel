@@ -5,7 +5,7 @@ export const mockHotel: Hotel = {
   name: 'Hotel de Teste',
   description: 'Hotel de Teste Description',
   stars: '5',
-  thumb: 'https://via.placeholder.com/150',
+  thumb: 'https://fakeimg.pl/600x400',
   favorite: false,
   amenities: [
     {

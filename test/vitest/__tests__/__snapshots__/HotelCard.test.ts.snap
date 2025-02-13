@@ -1,0 +1,67 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelCard > matches snapshot 1`] = `
+"<div class=\\"q-card q-card--flat no-shadow hotel-card\\">
+  <div class=\\"row full-width\\">
+    <div class=\\"col-12 col-md-4\\">
+      <div data-v-f3901ebe=\\"\\" class=\\"q-carousel q-panel-parent q-carousel--without-padding hotel-carousel\\" style=\\"height: 320px;\\">
+        <div class=\\"q-carousel__slides-container\\">
+          <transition-stub appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+            <div class=\\"q-panel scroll\\" style=\\"--q-transition-duration: 300ms;\\" role=\\"tabpanel\\">
+              <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__slide\\"><img data-v-f3901ebe=\\"\\" src=\\"https://fakeimg.pl/600x400\\" class=\\"full-width full-height fit\\"></div>
+            </div>
+          </transition-stub>
+        </div>
+        <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-left carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_back</i></span></button></div>
+        <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-right carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_forward</i></span></button></div>
+        <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-bottom slide-counter-container\\" style=\\"margin: 18px;\\">
+          <div data-v-f3901ebe=\\"\\" class=\\"slide-counter\\">1/3</div>
+        </div>
+      </div>
+    </div>
+    <div class=\\"col-12 col-md-5\\">
+      <div class=\\"q-card__section q-card__section--vert\\">
+        <h2 class=\\"text-h5 q-ma-none text-grey-9\\">Hotel de Teste</h2>
+        <h3 class=\\"text-subtitle1 text-grey-6 q-ma-none text-weight-regular\\">Av. Antônio Abrahão Caram, 1001, São José, Belo Horizonte, MG, Brasil, 31275-000</h3>
+        <div class=\\"row items-center q-gutter-x-md q-mt-md\\">
+          <div data-v-378063dc=\\"\\" class=\\"row items-start q-gutter-x-xs rating-section\\"><span data-v-378063dc=\\"\\">5</span>
+            <div data-v-378063dc=\\"\\" class=\\"q-rating row inline items-center q-rating--non-editable text-orange-4 rating\\" style=\\"font-size: 18px;\\" role=\\"radiogroup\\" aria-readonly=\\"true\\">
+              <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 1\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+              <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 2\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+              <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 3\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+              <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"false\\" aria-label=\\"grade 4\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+              <div class=\\"q-rating__icon-container flex flex-center\\" role=\\"radio\\" aria-checked=\\"true\\" aria-label=\\"grade 5\\"><i class=\\"q-icon notranslate material-icons q-rating__icon q-rating__icon--active text-orange-4\\" aria-hidden=\\"true\\" role=\\"presentation\\">grade</i></div>
+            </div>
+          </div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">help_outline</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">restaurant_menu</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">store</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">hot_tub</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">medical_services</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">local_library</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">golf_course</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">surfing</i></div>
+          <div data-v-accd225c=\\"\\" class=\\"row items-center amenity-item text-grey-6\\"><i data-v-accd225c=\\"\\" class=\\"q-icon notranslate material-icons\\" style=\\"font-size: 18px;\\" aria-hidden=\\"true\\" role=\\"presentation\\">child_care</i></div>
+        </div>
+        <div class=\\"q-mt-md\\">
+          <div class=\\"q-chip row inline no-wrap items-center bg-grey-6 text-grey-1 q-chip--colored q-chip--dense no-shadow rounded-borders q-pa-md\\" readonly=\\"\\">
+            <div class=\\"q-chip__content col row no-wrap items-center q-anchor--skip\\">
+              <div class=\\"ellipsis\\">Não Reembolsável</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=\\"col-12 col-md-3 price-section\\">
+      <div class=\\"q-card__section q-card__section--vert column full-height\\">
+        <div class=\\"col-auto q-mb-md q-mb-md-none\\">
+          <p class=\\"text-caption q-ma-none text-weight-regular text-grey-6\\">A partir de</p>
+          <p class=\\"text-caption q-mb-sm\\"> R$ <span class=\\"text-h5\\">0,00</span></p>
+          <p class=\\"text-caption q-ma-none text-weight-regular text-grey-6\\">Impostos inclusos</p>
+        </div>
+        <div class=\\"col full-width flex justify-start items-start\\"><button class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--rectangle q-btn--rounded bg-primary text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><span class=\\"block\\">Selecionar</span></span></button></div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;
