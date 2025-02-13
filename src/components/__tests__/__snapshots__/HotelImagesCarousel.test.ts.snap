@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotelImagesCarousel > matches snapshot 1`] = `
+"<div data-v-f3901ebe=\\"\\" class=\\"q-carousel q-panel-parent q-carousel--without-padding hotel-carousel\\" style=\\"height: 320px;\\">
+  <div class=\\"q-carousel__slides-container\\">
+    <transition-stub appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+      <div class=\\"q-panel scroll\\" style=\\"--q-transition-duration: 300ms;\\" role=\\"tabpanel\\">
+        <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__slide\\"><img data-v-f3901ebe=\\"\\" src=\\"https://fakeimg.pl/600x400\\" class=\\"full-width full-height fit\\"></div>
+      </div>
+    </transition-stub>
+  </div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-left carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_back</i></span></button></div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-right carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_forward</i></span></button></div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-bottom slide-counter-container\\" style=\\"margin: 18px;\\">
+    <div data-v-f3901ebe=\\"\\" class=\\"slide-counter\\">1/3</div>
+  </div>
+</div>"
+`;
+
+exports[`HotelImagesCarousel > matches snapshot with counter 1`] = `
+"<div data-v-f3901ebe=\\"\\" class=\\"q-carousel q-panel-parent q-carousel--without-padding hotel-carousel\\" style=\\"height: 320px;\\">
+  <div class=\\"q-carousel__slides-container\\">
+    <transition-stub appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+      <div class=\\"q-panel scroll\\" style=\\"--q-transition-duration: 300ms;\\" role=\\"tabpanel\\">
+        <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__slide\\"><img data-v-f3901ebe=\\"\\" src=\\"https://fakeimg.pl/600x400\\" class=\\"full-width full-height fit\\"></div>
+      </div>
+    </transition-stub>
+  </div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-left carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_back</i></span></button></div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-right carousel-nav-btn\\" style=\\"margin: 160px 16px;\\"><button data-v-f3901ebe=\\"\\" class=\\"q-btn q-btn-item non-selectable no-outline q-btn--standard q-btn--round bg-white text-black q-btn--actionable q-focusable q-hoverable q-btn--dense carousel-nav-btn\\" style=\\"font-size: 12px;\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"q-focus-helper\\"></span><span class=\\"q-btn__content text-center col items-center q-anchor--skip justify-center row\\"><i class=\\"q-icon notranslate material-icons\\" aria-hidden=\\"true\\" role=\\"img\\">arrow_forward</i></span></button></div>
+  <div data-v-f3901ebe=\\"\\" class=\\"q-carousel__control absolute absolute-bottom slide-counter-container\\" style=\\"margin: 18px;\\">
+    <div data-v-f3901ebe=\\"\\" class=\\"slide-counter\\">1/3</div>
+  </div>
+</div>"
+`;

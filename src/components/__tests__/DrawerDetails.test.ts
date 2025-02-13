@@ -2,8 +2,8 @@ import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
 import { installQuasarPlugin } from '@quasar/quasar-app-extension-testing-unit-vitest'
 
-import DrawerDetails from '../../../src/components/DrawerDetails.vue'
-import { mockHotel } from '../mocks'
+import DrawerDetails from '../DrawerDetails.vue'
+import { mockHotel } from './mocks'
 
 installQuasarPlugin()
 
