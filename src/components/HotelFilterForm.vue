@@ -44,32 +44,24 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import type { Place } from './models';
-import filterPlaces from '../utils/filterPlaces';
-import { useQueryParams } from '../composables/useQueryParams'
 import { useRoute } from 'vue-router';
 
-const places = ref<Place[]>([]);
+import type { Place } from './models';
+
+import { usePlaces } from '../composables/usePlaces';
+import { useQueryParams } from '../composables/useQueryParams';
+
 const selectedPlace = ref<Place | null>(null);
 const hotelName = ref('');
 const filteredPlaces = ref<Place[]>([]);
 const hasSubmitted = ref(false);
-const { updateQueryParams } = useQueryParams()
-const { query } = useRoute()
-
-const loadPlaces = async () => {
-  try {
-    const response = await fetch('/place.json');
-    places.value = await response.json();
-    filteredPlaces.value = places.value;
-  } catch (error) {
-    console.error('Error loading places:', error);
-  }
-};
+const { updateQueryParams } = useQueryParams();
+const { query } = useRoute();
+const { places, fetchPlaces, filterPlaces } = usePlaces();
 
 const handleFilter = (val: string, update: (callback: () => void) => void) => {
   update(() => {
-    filteredPlaces.value = filterPlaces(places.value, val);
+    filteredPlaces.value = filterPlaces(val);
   });
 };
 
@@ -87,17 +79,18 @@ const onSubmit = async () => {
 };
 
 onMounted(async () => {
-  await loadPlaces();
+  await fetchPlaces();
+  filteredPlaces.value = places.value;
 
   if (query.location) {
-    selectedPlace.value = places.value.find(place => `${place.name}, ${place.state.shortname}` === query.location) || null;
-
+    selectedPlace.value = places.value.find(place =>
+      `${place.name}, ${place.state.shortname}` === query.location
+    ) || null;
     hasSubmitted.value = true;
   }
 
   if (query.hotelName) {
     hotelName.value = query.hotelName as string;
-
     hasSubmitted.value = true;
   }
 });
