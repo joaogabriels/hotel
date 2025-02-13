@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`HotelSortSelect > matches snapshot 1`] = `
-"<div class=\\"row items-center text-grey-8\\"><span class=\\"text-body2\\">Organizar por</span>
-  <q-btn-dropdown-stub label=\\"Recomendados\\" replace=\\"false\\" disable=\\"false\\" type=\\"button\\" flat=\\"true\\" outline=\\"false\\" push=\\"false\\" unelevated=\\"false\\" square=\\"false\\" rounded=\\"false\\" glossy=\\"false\\" fab=\\"false\\" fabmini=\\"false\\" nocaps=\\"true\\" nowrap=\\"false\\" dense=\\"true\\" ripple=\\"true\\" align=\\"center\\" stack=\\"false\\" stretch=\\"false\\" transitionshow=\\"fade\\" transitionhide=\\"fade\\" transitionduration=\\"300\\" modelvalue=\\"false\\" split=\\"false\\" cover=\\"false\\" persistent=\\"false\\" noroutedismiss=\\"false\\" autoclose=\\"false\\" menuanchor=\\"bottom end\\" menuself=\\"top end\\" disablemainbtn=\\"false\\" disabledropdown=\\"false\\" noiconanimation=\\"false\\" class=\\"text-primary text-weight-medium\\"></q-btn-dropdown-stub>
-</div>"
-`;
