@@ -1,0 +1,10 @@
+services:
+  quasar:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '9000:9000'
+    command: sh -c "npm install && npm run dev"
