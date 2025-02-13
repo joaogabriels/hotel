@@ -62,6 +62,8 @@ export default defineConfig((/* ctx */) => {
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
+      publicPath: '/hotel/',
+
       vitePlugins: [
         [
           'vite-plugin-checker',
