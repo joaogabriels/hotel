@@ -1,8 +1,8 @@
 {
   "name": "hotels",
   "version": "0.0.1",
-  "description": "Hotels quasar app",
-  "productName": "Hotels App",
+  "description": "Um app para encontrar os melhores hotéis",
+  "productName": "Hotels",
   "author": "joaogabriels <joaogabrielsevangelista@gmail.com>",
   "type": "module",
   "private": true,
