@@ -47,10 +47,8 @@ const middleOffset = computed(() => {
 
 const onImageError = (event: Event) => {
   const img = event.target as HTMLImageElement;
-  img.src = '../assets/hotel_placeholder.png';
+  img.src = 'https://placehold.co/600x400?text=Imagem+não+encontrada';
 };
-
-console.log(middleOffset.value);
 </script>
 
 <style lang="scss" scoped>
