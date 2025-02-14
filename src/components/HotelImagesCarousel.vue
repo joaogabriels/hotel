@@ -47,7 +47,7 @@ const middleOffset = computed(() => {
 
 const onImageError = (event: Event) => {
   const img = event.target as HTMLImageElement;
-  img.src = '/hotel_placeholder.png';
+  img.src = '../assets/hotel_placeholder.png';
 };
 
 console.log(middleOffset.value);

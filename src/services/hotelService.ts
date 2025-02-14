@@ -1,4 +1,5 @@
 import type { Hotel } from 'components/models'
+import hotels from '../assets/hotel.json'
 
 interface HotelFilters {
   location?: string
@@ -17,10 +18,15 @@ interface PaginatedResponse<T> {
 
 class HotelService {
   private async fetchHotels(): Promise<Hotel[]> {
-    const response = await fetch('/hotel.json')
-    const data = await response.json()
+    await new Promise((resolve) => setTimeout(resolve, 800))
 
-    return data.flatMap((item: { hotels: Hotel[] }) => item.hotels)
+    return hotels.flatMap((item) => {
+      if ('hotels' in item && Array.isArray(item.hotels)) {
+        return item.hotels as Hotel[]
+      }
+
+      return []
+    })
   }
 
   async getHotels(filters: HotelFilters = {}): Promise<PaginatedResponse<Hotel>> {
@@ -28,8 +34,6 @@ class HotelService {
 
     try {
       let hotels = await this.fetchHotels()
-
-      await new Promise((resolve) => setTimeout(resolve, 800))
 
       if (location) {
         const [city, state] = location.split(',')

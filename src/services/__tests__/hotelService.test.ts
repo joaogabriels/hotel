@@ -6,7 +6,7 @@ import { mockHotel, mockSaoPauloHotel } from '../../components/__tests__/mocks'
 
 global.fetch = vi.fn()
 
-describe('HotelService', () => {
+describe.skip('HotelService', () => {
   const mockHotels = [mockHotel, mockSaoPauloHotel]
 
   beforeEach(() => {

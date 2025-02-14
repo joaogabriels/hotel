@@ -1,15 +1,13 @@
 import type { Place } from '../components/models'
+import places from '../assets/place.json'
 
 class PlaceService {
   async getPlaces(): Promise<Place[]> {
-    try {
-      const response = await fetch('/place.json')
-      const data = await response.json()
-      return data
-    } catch (error) {
-      console.error('Error fetching places:', error)
-      throw new Error('Failed to fetch places')
-    }
+    const response = places
+
+    await new Promise((resolve) => setTimeout(resolve, 800))
+
+    return response
   }
 }
 
