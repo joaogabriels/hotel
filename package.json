@@ -11,7 +11,7 @@
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "vitest",
     "dev": "quasar dev",
-    "build": "quasar build",
+    "build": "quasar build && cp -r public/* dist/spa/",
     "postinstall": "quasar prepare"
   },
   "dependencies": {
