@@ -7,10 +7,11 @@
     <q-form @submit="onSubmit">
       <div class="column q-gutter-y-md q-px-md q-pb-md">
         <div class="input-group">
-          <label class="input-label">Destino <span class="text-negative">*</span></label>
+          <label class="input-label" for="destination">Destino</label>
           <q-select v-model="selectedPlace" dense borderless use-input hide-selected fill-input input-debounce="0"
             :options="filteredPlaces" @filter="handleFilter"
-            :option-label="opt => opt ? `${opt.name}, ${opt.state.shortname}` : ''" class="input-field" clearable>
+            :option-label="opt => opt ? `${opt.name}, ${opt.state.shortname}` : ''" class="input-field" clearable
+            id="destination">
             <template v-slot:no-option>
               <q-item>
                 <q-item-section class="text-grey">
@@ -30,8 +31,8 @@
         </div>
 
         <div class="input-group">
-          <label class="input-label">Nome do Hotel</label>
-          <q-input v-model="hotelName" borderless dense class="input-field" />
+          <label class="input-label" for="hotelName">Nome do Hotel</label>
+          <q-input v-model="hotelName" borderless dense class="input-field" id="hotelName" />
         </div>
 
         <div class="flex justify-end q-mt-md q-gutter-x-md">

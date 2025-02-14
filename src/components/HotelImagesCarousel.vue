@@ -16,7 +16,7 @@
           class="carousel-nav-btn" size="12px" />
       </q-carousel-control>
 
-      <q-carousel-control position="bottom" class="slide-counter-container">
+      <q-carousel-control v-if="showCounter" position="bottom" class="slide-counter-container">
         <div class="slide-counter">
           {{ currentSlide + 1 }}/{{ images.length }}
         </div>
