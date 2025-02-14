@@ -48,6 +48,10 @@ jobs:
       - name: Build Quasar SPA
         run: npm run build
 
+      - name: Copy public folder
+        run: |
+          cp -r public/* dist/spa/
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

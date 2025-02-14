@@ -59,9 +59,6 @@ export default defineConfig((/* ctx */) => {
       // polyfillModulePreload: true,
       // distDir
 
-      extendViteConf(viteConf) {
-        viteConf.base = './'
-      },
       // viteVuePluginOptions: {},
 
       publicPath: '/hotel/',
@@ -79,6 +76,8 @@ export default defineConfig((/* ctx */) => {
           { server: false },
         ],
       ],
+
+      ignorePublicFolder: false,
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#devserver
